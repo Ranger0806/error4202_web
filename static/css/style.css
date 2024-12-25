@@ -1,0 +1,64 @@
+:root {
+    --text-size: 24px;
+    --big-text-size: 48px;
+    --medium-text-size: 32px;
+    --small-text-size: 12px;
+}
+
+html {
+    font-family: "Noto Sans", serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px black;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header_text {
+    font-size: var(--big-text-size);
+}
+
+.section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: solid 1px black;
+}
+
+.section_text {
+    font-size: var(--text-size);
+}
+
+.footer_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_text {
+    font-size: var(--small-text-size);
+}
+
+
+@media (max-width: 860px) {
+    .footer_wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+    .header_text {
+        font-size: var(--medium-text-size);
+    }
+}
+
